@@ -3,99 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChainCacao | Miabé Hackathon 2026</title>
+    <title>AgriChain | Le Passeport Numérique du Cacao Togolais</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        
-        .glass-morphism {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1590779033100-9f60705a2d3d?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
         }
-
-        .hero-gradient {
-            background: radial-gradient(circle at top left, #065f46, #064e3b, #022c22);
-        }
-
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .card-hover:hover {
-            transform: translateY(-10px);
-            transition: all 0.3s ease;
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-        }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #4ade80, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-stone-50 text-slate-900">
 
-    <nav class="fixed w-full z-50 glass-morphism py-4 px-6">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="bg-green-600 p-2 rounded-xl text-white shadow-lg shadow-green-200">
-                    <i class="fas fa-cubes text-xl"></i>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-green-600 p-2 rounded-lg text-white">
+                    <i class="fas fa-leaf text-xl"></i>
                 </div>
-                <span class="text-2xl font-extrabold tracking-tight text-green-900">ChainCacao</span>
+                <span class="text-2xl font-extrabold tracking-tighter text-slate-900 uppercase">AgriChain</span>
             </div>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-bold uppercase tracking-wider text-slate-600">
-                <a href="#contexte" class="hover:text-green-600 transition">Enjeux</a>
-                <a href="#solution" class="hover:text-green-600 transition">Solution</a>
-                <a href="#blockchain" class="hover:text-green-600 transition">Blockchain</a>
-                <a href="#impact" class="hover:text-green-600 transition">Impact</a>
+            <div class="hidden lg:flex space-x-8 font-bold text-xs uppercase tracking-widest text-slate-500">
+                <a href="#contexte" class="hover:text-green-600 transition">Filière Togo</a>
+                <a href="#probleme" class="hover:text-green-600 transition">Le Mur EUDR</a>
+                <a href="#solution" class="hover:text-green-600 transition">La Solution</a>
+                <a href="#impact" class="hover:text-green-600 transition">Impact Social</a>
             </div>
-            <button class="bg-green-700 text-white px-6 py-2.5 rounded-full font-bold hover:bg-green-800 transition shadow-md">
-                Dossier T-01
-            </button>
+            <!-- <button class="bg-green-700 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-800 transition">
+                Dossier MBH 2026
+            </button> -->
         </div>
     </nav>
 
-    <header class="hero-gradient min-h-screen flex items-center pt-20 px-6 overflow-hidden">
+    <header class="hero-section min-h-screen flex items-center pt-20 px-6">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div class="text-white space-y-8 animate-fade-in">
-                <span class="inline-block px-4 py-1 rounded-full bg-green-500/20 border border-green-400/30 text-green-300 font-bold text-xs uppercase tracking-widest">
-                    Miabé Hackathon 2026
-                </span>
-                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight">
-                    La Blockchain au service du <span class="text-green-400">Cacao Togolais</span>.
+            <div class="text-white space-y-8">
+                <!-- <span class="inline-block px-4 py-1 rounded-full bg-green-500/20 border border-green-400/30 text-green-400 font-bold text-xs uppercase tracking-widest">
+                    Darollo Technologies Corporation
+                </span> -->
+                <h1 class="text-5xl lg:text-7xl font-black leading-tight">
+                    Le Passeport Numérique du <span class="text-gradient">Cacao Togolais</span>.
                 </h1>
-                <p class="text-lg text-green-100/80 leading-relaxed max-w-xl">
-                    ChainCacao offre une traçabilité géographique certifiée pour répondre aux exigences de l'Union Européenne (EUDR) et assurer l'avenir de nos agriculteurs.
+                <p class="text-lg text-stone-200 max-w-xl leading-relaxed">
+                    De la parcelle togolaise à la tablette européenne : une traçabilité blockchain pour la conformité EUDR et la valorisation des 40 000 familles productrices.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#solution" class="bg-white text-green-900 px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition">Explorer le Projet</a>
-                    <button onclick="openModal()" class="bg-transparent border-2 border-white/20 hover:bg-white/10 px-8 py-4 rounded-2xl font-bold text-lg transition">
-                        Voir la Démo
-                    </button>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#solution" class="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-500 transition shadow-xl shadow-green-900/40">Explorer le MVP</a>
+                    <a href="#probleme" class="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Urgence EUDR</a>
                 </div>
             </div>
-            <div class="hidden lg:block relative">
-                <div class="animate-float">
-                    <div class="bg-white/10 backdrop-blur-3xl p-8 rounded-[40px] border border-white/20 shadow-2xl">
-                        <div class="flex items-center justify-between mb-8">
-                            <span class="font-bold text-green-400">Blockchain Ledger</span>
-                            <div class="flex space-x-2">
-                                <div class="w-3 h-3 bg-red-400 rounded-full"></div>
-                                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+            <div class="hidden lg:block">
+                <div class="glass p-8 rounded-[40px] relative">
+                    <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=800" alt="Cacao Pod" class="rounded-3xl shadow-2xl animate-pulse">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-stone-100">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-qrcode text-3xl text-green-600"></i>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase">Lot Vérifié</p>
+                                <p class="text-sm font-black text-slate-900">TG-KPAL-2026-001</p>
                             </div>
-                        </div>
-                        <div class="space-y-4 font-mono text-sm opacity-80">
-                            <div class="text-green-300">>> Block #8292 verified</div>
-                            <div class="text-white">>> Lot ID: TG-CAO-2026-01</div>
-                            <div class="text-white">>> Origin: Kpalimé, Togo</div>
-                            <div class="text-white">>> GPS: 6.9112° N, 0.6341° E</div>
-                            <div class="text-yellow-300">>> Status: Ready for Export</div>
                         </div>
                     </div>
                 </div>
@@ -104,78 +76,111 @@
     </header>
 
     <section id="contexte" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Le défi de la traçabilité [cite: 6]</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto italic">Au Togo, la filière café-cacao fait vivre des dizaines de milliers de familles rurales. [cite: 7]</p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
-                <div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-biohazard text-2xl"></i>
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-black mb-6 text-slate-900">Un pilier de l'économie Togolaise</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                    Le café et le cacao représentent les 2ème et 3ème produits agricoles du pays. Ces filières pèsent <strong>5,5% du PIB agricole</strong> et contribuent à 1,4% de la richesse nationale, particulièrement dans les régions de Kpalimé, du Limité et de la Kayah.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
+                        <div class="text-3xl font-black text-green-700">31 200+</div>
+                        <p class="text-xs font-bold text-slate-500 uppercase">Producteurs enregistrés</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm">
+                        <div class="text-3xl font-black text-green-700">58 000 ha</div>
+                        <p class="text-xs font-bold text-slate-500 uppercase">Superficie cultivée</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold mb-4 italic">Règlement EUDR [cite: 10]</h3>
-                <p class="text-slate-600 leading-relaxed">Désormais en vigueur, ce règlement exige une traçabilité géographique prouvée pour tout cacao exporté vers l'UE. [cite: 10]</p>
             </div>
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
-                <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-user-slash text-2xl"></i>
+            <div class="bg-green-900 rounded-[3rem] overflow-hidden shadow-2xl relative">
+                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800" alt="African Farmer" class="opacity-80">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white px-8">
+                        <p class="text-4xl font-black mb-2">+50%</p>
+                        <p class="text-sm font-bold uppercase tracking-widest">Hausse des exportations (2024-2025)</p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold mb-4 italic">4 à 6 Intermédiaires [cite: 8]</h3>
-                <p class="text-slate-600 leading-relaxed">Entre la ferme et l'exportation, le parcours est opaque. L'agriculteur ne sait pas ce que son produit rapporte. [cite: 8, 9]</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover">
-                <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-chart-line-down text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4 italic">Pertes Colossales [cite: 17]</h3>
-                <p class="text-slate-600 leading-relaxed">Les fraudes sur les pesées représentent des pertes estimées à 30-40 millions USD par an pour les producteurs. [cite: 17]</p>
             </div>
         </div>
     </section>
 
-    <section id="blockchain" class="bg-slate-900 py-24 px-6">
+    <section id="probleme" class="py-24 px-6 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-extrabold text-white mb-8 italic">Pourquoi la Blockchain ? [cite: 42]</h2>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4 text-red-400 decoration-red-400 decoration-4">La Menace : Le Mur Règlementaire Européen</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Sans AgriChain, chaque tonne de cacao togolais risque d'être refusée à la douane européenne dès 2025.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-10 rounded-[40px] border border-white/10">
+                    <div class="text-4xl mb-6 text-red-400"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Urgence EUDR 2025</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed italic">
+                        Le règlement exige des coordonnées GPS précises prouvant que le cacao n'est pas issu de terres déforestées après 2020.
+                    </p>
+                </div>
+                <div class="bg-white/5 p-10 rounded-[40px] border border-white/10">
+                    <div class="text-4xl mb-6 text-orange-400"><i class="fas fa-balance-scale-left"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Fraudes à la pesée</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed italic">
+                        Balances truquées et opacité causent 30 à 40 millions USD de pertes annuelles pour nos producteurs.
+                    </p>
+                </div>
+                <div class="bg-white/5 p-10 rounded-[40px] border border-white/10">
+                    <div class="text-4xl mb-6 text-blue-400"><i class="fas fa-user-lock"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Invisibilité Digitale</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed italic">
+                        L'agriculteur ne perçoit que 15 à 25% de la valeur finale car il ne peut prouver l'origine premium de sa récolte.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="lg:w-1/2 space-y-8">
+                    <h2 class="text-4xl font-black text-slate-900 leading-tight italic">AgriChain : Low-Tech, <br><span class="text-green-600">High-Trust</span></h2>
+                    <p class="text-slate-600 text-lg italic">
+                        "L'outil doit être aussi facile à utiliser qu'un téléphone à prépaiement, mais aussi fiable qu'un acte notarial."
+                    </p>
                     <div class="space-y-6">
-                        <div class="flex gap-5">
-                            <div class="mt-1 bg-green-500/20 p-2 rounded-lg text-green-400">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="bg-green-100 text-green-700 p-3 rounded-xl"><i class="fas fa-mobile-alt"></i></div>
                             <div>
-                                <h4 class="text-xl font-bold text-white mb-2 italic text-sm">Immuabilité et Confiance [cite: 42]</h4>
-                                <p class="text-slate-400">Elle permet à plusieurs acteurs qui ne se font pas confiance de partager un registre vérifiable sans intermédiaire. [cite: 42]</p>
+                                <h4 class="font-black italic text-sm uppercase">Mode Hors-Ligne</h4>
+                                <p class="text-slate-500 text-sm">L'agriculteur enregistre en 3 clics, même sans internet au fond de la forêt de Kpalimé.</p>
                             </div>
                         </div>
-                        <div class="flex gap-5">
-                            <div class="mt-1 bg-blue-500/20 p-2 rounded-lg text-blue-400">
-                                <i class="fas fa-database"></i>
-                            </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="bg-blue-100 text-blue-700 p-3 rounded-xl"><i class="fas fa-satellite"></i></div>
                             <div>
-                                <h4 class="text-xl font-bold text-white mb-2 italic text-sm">Données On-Chain [cite: 24]</h4>
-                                <p class="text-slate-400 italic">Enregistrement des caractéristiques : origine GPS, poids, espèce et date de récolte. [cite: 24]</p>
+                                <h4 class="font-black italic text-sm uppercase">Score de Confiance & Satellite</h4>
+                                <p class="text-slate-500 text-sm">Vérification automatique via imagerie Sentinel-2 que la parcelle respecte le règlement EUDR.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lg:w-1/2 w-full space-y-4">
-                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
-                        <div class="flex items-center gap-4">
-                            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-xs font-bold">1</div>
-                            <span class="text-white font-bold italic">Saisie Terrain (App Mobile) </span>
+                <div class="lg:w-1/2 bg-stone-50 p-8 rounded-[3rem] border border-stone-100">
+                    <h3 class="text-xl font-black mb-8 flex items-center gap-2 italic">
+                        <i class="fas fa-project-diagram text-green-600"></i> Parcours du Sac de Cacao
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-8 border-l-2 border-green-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-600"></div>
+                            <h5 class="font-bold text-sm italic">Étape 1 : À la Parcelle</h5>
+                            <p class="text-xs text-slate-500">Capture GPS automatique + Photo du sac + Poids estimé.</p>
                         </div>
-                    </div>
-                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 opacity-60">
-                        <div class="flex items-center gap-4">
-                            <div class="w-8 h-8 rounded-full bg-slate-600 flex items-center justify-center text-xs font-bold text-white">2</div>
-                            <span class="text-white font-bold italic">Validation Coopérative [cite: 25]</span>
+                        <div class="relative pl-8 border-l-2 border-green-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-400"></div>
+                            <h5 class="font-bold text-sm italic">Étape 2 : À la Coopérative</h5>
+                            <p class="text-xs text-slate-500">Scan du QR Code. Détection automatique des écarts de pesée (>2%).</p>
                         </div>
-                    </div>
-                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 opacity-30">
-                        <div class="flex items-center gap-4">
-                            <div class="w-8 h-8 rounded-full bg-slate-600 flex items-center justify-center text-xs font-bold text-white">3</div>
-                            <span class="text-white font-bold italic text-sm">Vérification Importateur (QR Code) [cite: 27]</span>
+                        <div class="relative pl-8 border-l-2 border-green-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300"></div>
+                            <h5 class="font-bold text-sm italic">Étape 3 : Exportation & Europe</h5>
+                            <p class="text-xs text-slate-500">Génération du certificat de diligence raisonnée EUDR via la Blockchain.</p>
                         </div>
                     </div>
                 </div>
@@ -183,57 +188,52 @@
         </div>
     </section>
 
-    <section id="impact" class="py-24 px-6 bg-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-extrabold mb-12">Engagement Développement Durable [cite: 3]</h2>
-            <div class="flex flex-wrap justify-center gap-6">
-                <div class="px-6 py-3 rounded-full bg-red-50 text-red-700 font-black border border-red-100 shadow-sm italic text-xs uppercase tracking-widest">ODD 1 : Fin de la pauvreté [cite: 3]</div>
-                <div class="px-6 py-3 rounded-full bg-yellow-50 text-yellow-700 font-black border border-yellow-100 shadow-sm italic text-xs uppercase tracking-widest">ODD 2 : Faim zéro [cite: 3]</div>
-                <div class="px-6 py-3 rounded-full bg-green-50 text-green-700 font-black border border-green-100 shadow-sm italic text-xs uppercase tracking-widest">ODD 8 : Travail décent [cite: 4]</div>
-                <div class="px-6 py-3 rounded-full bg-orange-50 text-orange-700 font-black border border-orange-100 shadow-sm italic text-xs uppercase tracking-widest text-xs uppercase tracking-widest">ODD 12 : Consommation responsable [cite: 5]</div>
+    <section id="impact" class="py-24 px-6 bg-stone-900 text-white text-center">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 italic">Impact pour 40 000 familles</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-white/5 rounded-3xl border border-white/10">
+                    <div class="text-3xl font-black text-green-400 mb-2">+20%</div>
+                    <p class="text-[10px] font-bold uppercase tracking-widest">Hausse des revenus</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-3xl border border-white/10">
+                    <div class="text-3xl font-black text-blue-400 mb-2">100%</div>
+                    <p class="text-[10px] font-bold uppercase tracking-widest">Lots conformes EUDR</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-3xl border border-white/10">
+                    <div class="text-3xl font-black text-yellow-400 mb-2">0</div>
+                    <p class="text-[10px] font-bold uppercase tracking-widest">Fraudes à la pesée</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-3xl border border-white/10">
+                    <div class="text-3xl font-black text-orange-400 mb-2">40%</div>
+                    <p class="text-[10px] font-bold uppercase tracking-widest">Femmes productrices protégées</p>
+                </div>
+            </div>
+            <div class="mt-16 flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-red-600 rounded-full text-[10px] font-black uppercase tracking-widest">ODD 1 : Fin de la pauvreté</span>
+                <span class="px-4 py-2 bg-yellow-600 rounded-full text-[10px] font-black uppercase tracking-widest">ODD 2 : Faim zéro</span>
+                <span class="px-4 py-2 bg-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest">ODD 8 : Travail décent</span>
+                <span class="px-4 py-2 bg-green-600 rounded-full text-[10px] font-black uppercase tracking-widest">ODD 12 : Consommation responsable</span>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-50 border-t border-slate-200 py-16 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-            <div class="space-y-4">
-                <div class="text-2xl font-black text-green-800 italic">DAROLLO TECHNOLOGIES CORPORATION [cite: 1]</div>
-                <p class="text-slate-500 max-w-sm italic underline">"La Blockchain, levier du développement durable africain" [cite: 40]</p>
+    <footer class="bg-white border-t border-stone-200 py-16 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div>
+                <div class="text-2xl font-black text-green-900 mb-2 italic tracking-tighter uppercase">AgriChain</div>
+                <!-- <p class="text-slate-400 text-xs italic font-bold">Darollo Technologies Corporation | Miabé Hackathon 2026</p> -->
+                <p class="text-slate-400 text-[10px] uppercase mt-1 tracking-widest font-black">Lomé, Maritime Region, Togo</p>
             </div>
-            <div class="grid grid-cols-2 gap-12 font-bold text-sm text-slate-400 italic">
-                <div class="space-y-3">
-                    <p class="text-slate-900 uppercase tracking-widest">Projet</p>
-                    <a href="#" class="block hover:text-green-600">ChainCacao [cite: 2]</a>
-                    <a href="#" class="block hover:text-green-600">Edition 2026 [cite: 2]</a>
-                </div>
-                <div class="space-y-3">
-                    <p class="text-slate-900 uppercase tracking-widest">Contact</p>
-                    <a href="#" class="block hover:text-green-600">DTC Corp [cite: 39]</a>
-                    <a href="#" class="block hover:text-green-600">Lomé, Togo</a>
-                </div>
+            <!-- <div class="flex gap-6">
+                <a href="#" class="w-12 h-12 rounded-full border border-stone-100 flex items-center justify-center hover:bg-green-700 hover:text-white transition shadow-sm"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="w-12 h-12 rounded-full border border-stone-100 flex items-center justify-center hover:bg-green-700 hover:text-white transition shadow-sm"><i class="fab fa-github"></i></a>
+            </div> -->
+            <div class="text-right text-xs text-slate-400 font-bold uppercase italic tracking-widest">
+                "La Blockchain, levier du <br> développement durable africain"
             </div>
-        </div>
-        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-100 text-center text-slate-400 text-xs font-bold uppercase tracking-widest italic">
-            © 2026 Miabé Hackathon - Cadre de Référence Darollo Technologies Corporation [cite: 1]
         </div>
     </footer>
 
-    <script>
-        // Effet de scroll pour la navigation
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-xl');
-            } else {
-                nav.classList.remove('shadow-xl');
-            }
-        });
-
-        // Simple modal pour la démo
-        function openModal() {
-            alert("Accès aux maquettes visuelles (Phase 1) :\n- Interface Agriculteur\n- Interface Coopérative\n- Vérificateur QR Code ");
-        }
-    </script>
 </body>
 </html>
